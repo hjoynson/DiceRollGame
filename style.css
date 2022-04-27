@@ -1,25 +1,38 @@
 body {
 
-    background:
-    linear-gradient(to
-    right, #3f5efb, #fc66bb )
-;
+    background-image: url("dog.jpg");
+    width: 500px;
+    height: 500px;
+    background-repeat:repeat;
 
 }
 
 .wrapper {
-    display: flex;
+    background-color: antiquewhite;
+    border: #8B0000 solid 10px;
+    border-radius: 20px;
+    display: grid;
     width: 70%;
     margin: auto;
     text-align: center;
     align-items: center;
-    flex-wrap: wrap;
+    
 }
 
 h1{
+    
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 20px;
-    font-size: 6rem;
-    color: rgb(212, 170, 29);
+    font-size: 40px;
+    background-color: #ff0000;
+    background-image: linear-gradient(45deg, #f3ec78,#ff0000);
+
+  
 }
 
 .button{
@@ -37,13 +50,17 @@ margin: 0px 50px;
 text-align: center;
 display: inline-block;
 justify-content: center;
+
 }
 
 p {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 2.5rem;
-    color: rgb(208, 214, 218);
+    background-color: #ff0000;
+    background-image: linear-gradient(45deg, #f3ec78,#ff0000);
 }
 
 img{
-    width:320px;
+    width:100px;
+    height: 100px;
 }
