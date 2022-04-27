@@ -34,3 +34,13 @@ if (firstRandomNum > secondRandomNum) {
 } else { document.querySelector('h1').innerHTML = 'It is a draw';
 
 }
+
+//Button to refresh the page
+
+const refreshButton = document.querySelector('.refresh-button');
+
+const refreshPage = () => {
+  location.reload();
+}
+
+refreshButton.addEventListener('click', refreshPage)
