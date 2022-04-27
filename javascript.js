@@ -24,3 +24,13 @@ const secondDiceImage = 'assets/dice' + secondRandomNum + '.png';
 
 document.querySelectorAll('img')[1].setAttribute('src', secondDiceImage);
 
+// Logic for winner
+
+if (firstRandomNum > secondRandomNum) {
+    document.querySelector('h1').innerHTML = 'The Winner is User 1';
+} else if (firstRandomNum < secondRandomNum)
+{
+    document.querySelector('h1').innerHTML = 'The Winner is User 2';
+} else { document.querySelector('h1').innerHTML = 'It is a draw';
+
+}
