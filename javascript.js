@@ -102,3 +102,14 @@ let User2Total = 1;
         User1Total = 0;
     }
 })})
+
+
+//CSS Animation
+
+document.getElementById("img");
+document.addEventListener("click", function(e) {
+    e.preventDefault;
+    element.classList.remove("run-animation");
+    void element.offsetWidth;
+    element.classList.add("run-animation");
+}, false);
