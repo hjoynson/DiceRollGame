@@ -17,6 +17,13 @@ body {
     align-items: center;
 }
 
+
+.container:hover{
+    transform: translate3d(0px, 0px, -250px)
+    translate(10%, 0%)
+    scale(0.8, 0.8);}
+
+
 h1{
     
     -webkit-background-clip: text;
@@ -90,4 +97,9 @@ img{
     40%, 60% {
       transform: translate3d(4px, 0, 0);
     }
+  }
+
+  .roll:focus {
+    animation-name: shake;
+    animation-duration: 4s infinite;
   }
