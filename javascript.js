@@ -37,7 +37,7 @@ document.getElementById("roll").addEventListener("click", () => {
     const diceImage = 'assets/dice' + diceRolled + '.png';
 
     // Insert dice image
-    document.querySelectorAll('img')[0].setAttribute('src', diceImage);
+    document.querySelectorAll('img')[1].setAttribute('src', diceImage);
     let score2 = User2Total += diceRolled;
     document.getElementById("score2").innerHTML = score2 
 
@@ -46,6 +46,29 @@ document.getElementById("roll").addEventListener("click", () => {
 
     }
 
+
+  // Create win/lose scenario 
+
+  if(player1total >= 20){
+    document.getElementById("1winLose").textContent = "You win!"
+    User1Total = 0;
+}
+else if (diceRolled ==1){ 
+    document.getElementById("1winLose").textContent = "You rolled 1! You lose!"
+    document.getElementById("score1").textContent = ""
+    User1Total = 0;
+}
+
+if(player2total >= 20){
+    document.getElementById("2winLose").textContent = "You win!"
+    User1Total = 0;
+}
+else if (diceRolled ==1){ 
+    document.getElementById("2winLose").textContent = "You rolled 1! You lose!"
+    document.getElementById("score2").textContent = ""
+    User1Total = 0;
+}
+})
 
 //Button to refresh the page
 
@@ -62,5 +85,3 @@ document.getElementById("winLose").textContent = ""
 
 }) 
 
-
-})
