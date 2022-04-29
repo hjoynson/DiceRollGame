@@ -54,8 +54,8 @@ document.getElementById("roll").addEventListener("click", () => {
     User1Total = 0;
 }
 else if (diceRolled ==1){ 
-    document.getElementById("1winLose").textContent = "You rolled 1! You lose!"
-    document.getElementById("score1").textContent = ""
+    document.getElementById("score1").textContent = "You rolled 1! You lose!"
+    document.getElementById("1winLose").textContent = ""
     User1Total = 0;
 }
 
@@ -64,8 +64,8 @@ if(player2total >= 20){
     User1Total = 0;
 }
 else if (diceRolled ==1){ 
-    document.getElementById("2winLose").textContent = "You rolled 1! You lose!"
-    document.getElementById("score2").textContent = ""
+    document.getElementById("score2").textContent = "You rolled 1! You lose!"
+    document.getElementById("2winLose").textContent = ""
     User1Total = 0;
 }
 })
